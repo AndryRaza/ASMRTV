@@ -1,0 +1,24 @@
+﻿<Window x:Class="ASMRTV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ASMRTV"
+        mc:Ignorable="d"
+         ResizeMode="NoResize"
+        Title="ASMRTV" Height="450" Width="800">
+    <Grid>
+        <WebBrowser x:Name="tvBrowser" HorizontalAlignment="Left" Height="331" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+        <Grid HorizontalAlignment="Left" Height="63" Margin="10,346,0,0" VerticalAlignment="Top" Width="772">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="ASMR Clean ur ears" Margin="10,0" Click="Button_Click"></Button>
+            <Button Grid.Column="1" Content="ASMR Unzipping" Margin="10,0" Click="Button_Click_1"></Button>
+            <Button Grid.Column="2" Content="BrainGASM" Margin="10,0" Click="Button_Click_2"></Button>
+        </Grid>
+
+    </Grid>
+</Window>
